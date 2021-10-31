@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 12px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: azure;
+        }
+
+
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(bgimg.jpg);
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+        .content h1 {
+            color: antiquewhite;
+            display: block;
+            font-size: 3rem;
+            position: relative;
+
+        }
+
+        .btn {
+            display: inline-block;
+            font-size: 20px;
+            padding: 8px 10px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid crimson;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-top: 10px;
+            transition: 0.3s ease;
+            transition-property: background-color, color;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: crimson;
+        }
+
+        .content h1 span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-color: crimson;
+            animation: text_reveal_box 1s ease;
+            animation-delay: 1s;
+        }
+
+        .content h1:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        .content h1:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .content h1:nth-child(3) {
+            animation: text_reveal_name 0.5s ease forwards;
+            animation-delay: 3s;
+        }
+
+        .content h1:nth-child(1) span {
+            animation-delay: 0.5s;
+        }
+
+        .content h1:nth-child(2) span {
+            animation-delay: 1.5s;
+        }
+
+        .content h1:nth-child(3) span {
+
+            animation-delay: 2.5s;
+        }
+
+        .content {
+            max-width: 1200px;
+
+            padding: 0 50px;
+            justify-content: flex-start;
+
+        }
+
+        @keyframes text_reveal_box {
+            50% {
+                width: 100%;
+                left: 0;
+            }
+
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+
+        @keyframes text_reveal {
+            100% {
+                color: white;
+            }
+        }
+
+        @keyframes text_reveal_name {
+            100% {
+                color: crimson;
+                font-weight: 500;
+            }
+        }
+
+        #footer .footer-container {
+            min-height: 40vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            opacity: 0.8;
+        }
+
+        #footer .section-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+
+        #header .section-title span {
+            color: crimson;
+        }
+
+        #header .section-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+
+        }
+
+        #footer .section-title span {
+            color: crimson;
+        }
+
+        .fa {
+
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+
+            border-radius: 50%;
+            padding-top: 20px;
+            margin-left: 6%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        #footer .social-icons {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+
+        #header {
+            display: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+          
+            height: auto;
+        }
+
+        
+        .left{
+            
+            display: inline-block;
+           margin-left: 30px;
+           font-size: 26px;
+       
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+           right: 150px;
+           top:0px;
+           padding-top: 10px;
+            position: fixed;
+        }
+        nav{
+            display: inline-block;
+            color: bisque;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        nav li{
+            display:inline-block;
+        }
+        nav li a {
+            color:white;
+            text-decoration: none;
+            padding-left: 26px;
+            text-transform: uppercase;
+        }
+        nav li a:hover, nav li a.active{
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <section id="header">
+            <div class="header">
+               
+                <div class="right">
+                    <nav>
+                        <li><a href="home.html">home</a></li>
+                        <li><a href="Skills.html">services</a></li>
+                        <li><a href="Projects.html">projects</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="About.html">about</a></li>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <div class="content">
+            <h1>Hello,<span></span></h1>
+            <h1>My Name is <span></span></h1>
+            <h1>Preeti Anuragi <span></span></h1>
+            <a href="#" type="button" class="btn">Hire Me!!</a>
+        </div>
+    </div>
+    <section id="footer">
+        <div class="footer-container">
+            <div class="section-title">
+                <h1><span>P</span>reeti <span>A</span>nuragi</h1>
+            </div>
+
+        </div>
+
+        <div class="social-icons">
+            <div class="social-item">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

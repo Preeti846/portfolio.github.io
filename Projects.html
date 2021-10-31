@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        #projects .section-title {
+            font-size: 4rem;
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            text-align: center;
+
+        }
+
+        #projects .section-title span {
+            color: crimson;
+        }
+
+        #projects .projects-container {
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+        }
+
+        #projects .project-header h1 {
+            margin-bottom: 10px
+        }
+
+        #projects .all-projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #projects .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 70%;
+            height: 600px;
+            margin: 10px auto;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 2px solid black;
+
+        }
+
+        #projects .project-item:hover {
+            box-shadow: 10px 12px 13px 15px grey;
+        }
+
+        #projects .project-info {
+            padding: 30px;
+            flex-basis: 50%;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            background-image: linear-gradient(60deg, #29323c, #39424b 100%);
+
+            color: white;
+        }
+
+        #projects .project-info h1 {
+            font-size: 2rem;
+            font-weight: 100;
+        }
+
+        #projects .project-info p {
+            color: white;
+        }
+
+        #projects .project-img img {
+            flex-basis: 50%;
+            height: 300px;
+            overflow: hidden;
+            width: 700px;
+        }
+
+        #projects .project-img::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+
+           
+            opacity: 0.8;
+        }
+
+        #projects .project-item:hover .project-img {
+            transform: scale(1.1);
+        }
+        #projects .project-img img{
+            transition: 0.3s ease transform;
+        }
+        #header {
+            display: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+          
+            height: auto;
+        }
+
+        
+        .left{
+            
+            display: inline-block;
+           margin-left: 30px;
+           font-size: 26px;
+       
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+           right: 150px;
+           top:0px;
+           padding-top: 10px;
+            position: fixed;
+        }
+        nav{
+            display: inline-block;
+            color: black;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        nav li{
+            display:inline-block;
+        }
+        nav li a {
+            color:black;
+            text-decoration: none;
+            padding-left: 26px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        nav li a:hover, nav li a.active{
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="projects">
+        <div class="projects-container">
+            <section id="header container">
+                <div class="header">
+                   
+                    <div class="right">
+                        <nav>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="Skills.html">services</a></li>
+                            <li><a href="Projects.html">projects</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="About.html">about</a></li>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <div class="project-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 1</h1>
+                        <h3>AKS View</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta error temporibus adipisci
+                            doloribus tenetur vel asperiores itaque saepe sed beatae aspernatur corporis aut excepturi,
+                            delectus, voluptate quia iure. Soluta.
+                            Repellendus, fugit. Nostrum rerum perspiciatis esse eos repellendus quas, quia maxime
+                            voluptates quam. Facere reprehenderit, repellendus dicta, nisi, placeat sit harum sapiente
+                            voluptatibus ipsum asperiores atque corrupti culpa magni voluptatem.
+                            Corporis nisi ab eius debitis? Pariatur dolorum, odit earum ut velit ab exercitationem minus
+                            nesciunt fuga temporibus ipsa ducimus enim distinctio omnis molestiae quaerat reiciendis.
+                            Ullam nemo harum quasi sed.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="Proj1.jfif">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 2</h1>
+                        <h3>Website development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta error temporibus adipisci
+                            doloribus tenetur vel asperiores itaque saepe sed beatae aspernatur corporis aut excepturi,
+                            delectus, voluptate quia iure. Soluta.
+                            Repellendus, fugit. Nostrum rerum perspiciatis esse eos repellendus quas, quia maxime
+                            voluptates quam. Facere reprehenderit, repellendus dicta, nisi, placeat sit harum sapiente
+                            voluptatibus ipsum asperiores atque corrupti culpa magni voluptatem.
+                            Corporis nisi ab eius debitis? Pariatur dolorum, odit earum ut velit ab exercitationem minus
+                            nesciunt fuga temporibus ipsa ducimus enim distinctio omnis molestiae quaerat reiciendis.
+                            Ullam nemo harum quasi sed.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="proj2.png">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                        <h3>ChatBot</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta error temporibus adipisci
+                            doloribus tenetur vel asperiores itaque saepe sed beatae aspernatur corporis aut excepturi,
+                            delectus, voluptate quia iure. Soluta.
+                            Repellendus, fugit. Nostrum rerum perspiciatis esse eos repellendus quas, quia maxime
+                            voluptates quam. Facere reprehenderit, repellendus dicta, nisi, placeat sit harum sapiente
+                            voluptatibus ipsum asperiores atque corrupti culpa magni voluptatem.
+                            Corporis nisi ab eius debitis? Pariatur dolorum, odit earum ut velit ab exercitationem minus
+                            nesciunt fuga temporibus ipsa ducimus enim distinctio omnis molestiae quaerat reiciendis.
+                            Ullam nemo harum quasi sed.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="proj3.jfif">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                        <h3>School Management System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta error temporibus adipisci
+                            doloribus tenetur vel asperiores itaque saepe sed beatae aspernatur corporis aut excepturi,
+                            delectus, voluptate quia iure. Soluta.
+                            Repellendus, fugit. Nostrum rerum perspiciatis esse eos repellendus quas, quia maxime
+                            voluptates quam. Facere reprehenderit, repellendus dicta, nisi, placeat sit harum sapiente
+                            voluptatibus ipsum asperiores atque corrupti culpa magni voluptatem.
+                            Corporis nisi ab eius debitis? Pariatur dolorum, odit earum ut velit ab exercitationem minus
+                            nesciunt fuga temporibus ipsa ducimus enim distinctio omnis molestiae quaerat reiciendis.
+                            Ullam nemo harum quasi sed.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="proj4.jfif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

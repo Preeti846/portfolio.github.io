@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #contact .contact-container{
+            flex-direction: column;
+            margin:0 auto;
+            max-width: 1200px;
+            min-height: 100vh;
+           width: 100%;
+           display: flex;
+           align-items: center;
+          justify-content: center;
+        }
+        #contact .section-title {
+            font-size: 4rem;
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+
+        #contact .section-title span {
+            color: crimson;
+        }
+        #contact .contact-items{
+            width:70%;
+        }
+        #contact .contact-item{
+            width:80%;
+            padding:20px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 30px;
+            margin:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 10px 10px 10px 10px grey;
+           margin-bottom: 5%;
+        }
+        #contact .contact-item:hover{
+            transform: scale(1.1);
+        }
+        #contact .contact-info h1{
+            text-transform: uppercase;
+        }
+        .icon{
+             height: 80px;
+             width:100px;
+             object-fit: cover;
+            justify-content: left;
+         }
+         #header {
+            display: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+          
+            height: auto;
+        }
+
+        
+        .left{
+            
+            display: inline-block;
+           margin-left: 30px;
+           font-size: 26px;
+       
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+           right: 150px;
+           top:0px;
+           padding-top: 10px;
+            position: fixed;
+        }
+        nav{
+            display: inline-block;
+            color: black;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        nav li{
+            display:inline-block;
+        }
+        nav li a {
+            color:black;
+            text-decoration: none;
+            padding-left: 26px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        nav li a:hover, nav li a.active{
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="contact">
+        <div class="contact-container">
+            <section id="header container">
+                <div class="header">
+                   
+                    <div class="right">
+                        <nav>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="Skills.html">services</a></li>
+                            <li><a href="Projects.html">projects</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="About.html">about</a></li>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <h1 class="section-title">Contact <span>Info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/color/48/000000/apple-phone.png" />
+                    </div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>7484920038</h2>
+                        <h2>642328393</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/color/48/000000/apple-mail.png" />
+                    </div>
+                    <div class="contact-info">
+                        <h1>EMail</h1>
+                        <h2>preetoanuragi@gmail.com</h2>
+                        <h2>panuragi@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                      
+                        <img src="https://img.icons8.com/ios/50/000000/whatsapp--v4.png"/>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Whatsapp</h1>
+                        <h2>7484920038</h2>
+                        <h2>642328393</h2>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <hr>
+</body>
+
+</html>

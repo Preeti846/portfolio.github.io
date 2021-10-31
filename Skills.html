@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+
+        .servicescontainer {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            z-index: 1;
+            flex-direction: column;
+            text-align: center;
+            max-width: 1500px;
+            margin: auto;
+            padding-bottom: 100px;
+        }
+
+        #services .section-title {
+            font-size: 4rem;
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+
+        #services .section-title span {
+            color: crimson;
+        }
+
+        #services .service-top {
+            font-size: 1.4rem;
+            margin-top: 5px;
+            line-height: 2.5rem;
+            font-weight: 200;
+            letter-spacing: 0.05rem;
+        }
+
+        #service .service-end {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #services .service-item {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-image: url(serv.jfif);
+            background-position: center;
+            background-size: cover;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 10px 5%;
+            width: 50%;
+            margin-left: 20%;
+            color:rgb(15, 15, 15);
+        }
+         .icon{
+             height: 80px;
+             width:100px;
+             object-fit: cover;
+            justify-content: left;
+         }
+         #services .service-item:hover{
+             box-shadow:10px 10px 12px 10px rgb(44, 42, 42);
+         }
+         #services .service-item h2{
+             text-transform: uppercase;
+         }
+         #services .service-item p{
+             font-size: 1.4rem;
+             
+         }
+         #header {
+            display: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+          
+            height: auto;
+        }
+
+        
+        .left{
+            
+            display: inline-block;
+           margin-left: 30px;
+           font-size: 26px;
+       
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+           right: 150px;
+           top:0px;
+           padding-top: 10px;
+            position: fixed;
+        }
+        nav{
+            display: inline-block;
+            color: black;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        nav li{
+            display:inline-block;
+        }
+        nav li a {
+            color:black;
+            text-decoration: none;
+            padding-left: 26px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        nav li a:hover, nav li a.active{
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section id="services">
+        <div class="servicescontainer">
+            <section id="header container">
+                <div class="header">
+                   
+                    <div class="right">
+                        <nav>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="Skills.html">services</a></li>
+                            <li><a href="Projects.html">projects</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="About.html">about</a></li>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <div class="service-top">
+                <h1 class="section-title">Serv<span>I</span>ces</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vel delectus possimus quia nisi
+                    commodi beatae repellendus numquam. Sequi expedita temporibus tempore quasi laudantium neque placeat
+                    aliquam ratione atque ipsa?
+                    Distinctio debitis voluptate accusamus quam explicabo rem totam error laborum ducimus nulla, nemo
+                    soluta corrupti odio nesciunt similique sint asperiores sunt ipsa iure! Laboriosam facere explicabo
+                    reprehenderit delectus magnam recusandae.</p>
+            </div>
+            <div class="service-end">
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/color/48/000000/services--v1.png" /></div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facilis deserunt nulla doloremque
+                        corporis itaque nostrum necessitatibus. Voluptatibus quidem perferendis temporibus in vel, odio
+                        sit officia, aspernatur voluptatem ratione ut.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /></div>
+                    <h2>Coding</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facilis deserunt nulla doloremque
+                        corporis itaque nostrum necessitatibus. Voluptatibus quidem perferendis temporibus in vel, odio
+                        sit officia, aspernatur voluptatem ratione ut.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/fluency/48/000000/folder-invoices--v2.png" />
+                    </div>
+                    <h2>Asp.net</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facilis deserunt nulla doloremque
+                        corporis itaque nostrum necessitatibus. Voluptatibus quidem perferendis temporibus in vel, odio
+                        sit officia, aspernatur voluptatem ratione ut.</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/fluency/48/000000/project-management.png" />
+                    </div>
+                    <h2>Project development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi facilis deserunt nulla doloremque
+                        corporis itaque nostrum necessitatibus. Voluptatibus quidem perferendis temporibus in vel, odio
+                        sit officia, aspernatur voluptatem ratione ut.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

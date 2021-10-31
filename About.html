@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        
+        #about .section-title {
+            font-size: 2.5rem;
+          margin-top: 5%;
+            font-weight: 300;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            
+        }
+
+        #about .section-title span {
+            color: crimson;
+        }
+        a{
+           text-decoration: none;
+           color: azure;
+       }
+       .btn{
+           display: inline-block;
+           font-size: 20px;
+           padding: 8px 10px;
+           color: crimson;
+           border-radius: 10px;
+           background-color: transparent;
+           border: 2px solid crimson;
+           text-transform: uppercase;
+           letter-spacing: 0.1rem;
+           margin-top: 10px;
+           transition: 0.3s ease ;
+           transition-property: background-color, color;
+       }
+       .btn:hover{
+           color: white;
+           background-color: crimson;
+       }
+       #about .about-container{
+           flex-direction: column-reverse;
+           
+           max-width: 1200px;
+           margin:0 auto;
+          
+           display: flex;
+           position: relative;
+       }
+       #about .col-left{
+           width:250px;
+           height:360px;
+           
+       }
+      
+       #about .col-right h2{
+           font-size: 1.5rem;
+       }
+       #about .col-left .about-img{
+           position: relative;
+           z-index:1;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 10px;
+       }
+       #about .col-left .about-img::after{
+           content: '';
+           position: absolute;
+           left:-33px;
+           top:19px;
+            border:5px solid crimson;
+            z-index:-1;
+            height: 98%;
+            width:98%;
+               
+        }
+
+        
+        .left{
+            
+            display: inline-block;
+           margin-left: 30px;
+           font-size: 26px;
+       
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+           right: 150px;
+           top:0px;
+           padding-top: 10px;
+            position: fixed;
+        }
+        nav{
+            display: inline-block;
+            color: black;
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        nav li{
+            display:inline-block;
+        }
+        nav li a {
+            color:black;
+            text-decoration: none;
+            padding-left: 26px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        nav li a:hover, nav li a.active{
+            color: chocolate;
+        }
+        #about .col-right a{
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="about">
+        <div class="about-container flex-container">
+            <section id="header container">
+                <div class="header">
+                   
+                    <div class="right">
+                        <nav>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="Skills.html">services</a></li>
+                            <li><a href="Projects.html">projects</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="About.html">about</a></li>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="profile.jfif">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>Me</span></h1>
+                <h3>Frontend developer</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis unde animi inventore possimus
+                    magni error. Voluptates iste facere aspernatur, nostrum nulla quisquam delectus! Repellendus ratione
+                    eaque similique neque distinctio asperiores.
+                    Eligendi fuga deserunt voluptatum? Cum maiores odit mollitia atque. Incidunt cupiditate id error
+                    accusantium rem explicabo velit quae molestias obcaecati inventore corporis ad, molestiae, deleniti
+                    commodi nesciunt. Nam, dolore vel.
+                    Placeat laborum architecto consectetur deserunt non porro quae id excepturi molestiae ducimus
+                    pariatur minima nostrum recusandae, modi illo dicta corporis vel tenetur dignissimos nam ex ea fuga
+                    quas molestias? Atque?
+                </p>
+                <a href="#" class="btn" type="button">Download Resume</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
